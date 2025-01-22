@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>BOOK YOUR DATE</title>
+  <meta name="title" content="BOOK YOUR DATE - COLLECT YOUR EVERY SPECIAL MOMENT">
+  <meta name="description" content="This is a photography event booking site html template made by vikas verma">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+    
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+
+  <!-- 
+    - preload images
+  -->
+  <img src="{{ url_for('static', filename='static/images/hero-slider-1.jpg') }}" alt="Image">
+
+
+  <!-- <link rel="preload" as="image" href="./static/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg"> -->
+
+</head>
+
+
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">BOOK YOUR DATE</p>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Bhilai,CG
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily : 10.00 am to 8.00 pm</span>
+      </div>
+
+      <a href="tel:+917415741574" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+91 74157 41574</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:book@yourdate.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">book@yourdate.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <!-- <a href="#" class="logo">
+        <img src="./assets/images/logo1.png" width="160" height="50" alt="Foodmunch - Home">
+      </a> -->
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <!-- <a href="#" class="logo">
+          <img src="./assets/images/logo1.png" width="160" height="50" alt="Foodmunch - Home">
+        </a> -->
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#footer" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+
+          <li class="navbar-item">
+            <a href="#event" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Feedback</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4">
+            BHIAI, <br>
+            Chhattisgarh
+          </address>
+
+          <p class="body-4 navbar-text">Open:10 am - 8 pm</p>
+
+          <a href="mailto:book@yourdate.com" class="body-4 sidebar-link">book@yourdate.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Booking Request</p>
+
+          <a href="tel:+917415741574" class="body-1 contact-number hover-underline">
+            +91 74157 41574
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="#reservation" class="btn btn-secondary">
+        <span class="text text-1">BOOK YOUR SHOOT</span>
+
+        <span class="text text-2" aria-hidden="true">BOOK YOUR SHOOT</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              
+              <img src="{{ url_for('static', filename='images/wedding bg1.avif') }}" alt="Image">
+              <!-- <img src="./assets/images/wedding bg1.avif" width="1880" height="950" alt="" class="img-cover"> -->
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Traditional</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Collect your memories <br>
+              With us
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              we capture all your sweet and happy moments
+            </p>
+
+            <a href="#reservation" class="btn btn-secondary">
+              <span class="text text-1">Book Our Shoot</span>
+
+              <span class="text text-2" aria-hidden="true">Book Our Shoot</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+
+              <img src="{{ url_for('static', filename='images/abc_test.jpeg') }}" alt="Image">
+
+              <!-- <img src="./assets/images/abc_test.jpeg" width="1880" height="950" alt="" class="img-cover"> -->
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Experience</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              we have professional <br>
+              Photographer and Videographer
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              we capture all your sweet and happy moments
+            </p>
+
+            <a href="#reservation" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Book Our Shoot</span>
+
+              <span class="text text-2" aria-hidden="true">Book Our Shoot</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="{{ url_for('static', filename='images/wedding7.avif') }}" alt="Image">
+              <!-- <img src="./assets/images/wedding7.avif" width="1880" height="950" alt="" class="img-cover"> -->
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">cinematic</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+             our every captures <br>
+              makes each moment special
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+            
+              we capture all your sweet and happy moments
+            </p>
+
+            <a href="#reservation" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Book Our Shoot</span>
+
+              <span class="text text-2" aria-hidden="true">Book Our Shoot</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#" class="hero-btn has-after">
+          <!-- <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon"> -->
+
+          <span class="label-2 text-center span">Book A SHOOT</span>
+        </a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Make Your Event Unforgettable</p>
+
+          <h2 class="headline-1 section-title">We Offer Top Notch</h2>
+
+          <p class="section-text">
+            Capturing life's timeless moments with precision and passion. 
+            Preserving memories, one frame at a time."
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="{{ url_for('static', filename='images/prewedding.jpeg') }}" width="285" height="336" loading="lazy" alt="Breakfast" alt="Image">
+                    <!-- <img src="./assets/images/prewedding.jpeg" width="285" height="336" loading="lazy" alt="Breakfast" -->
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Pre Wedding</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Our Shoot</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="{{ url_for('static', filename='images/wedding4.jpg') }}" width="285" height="336" loading="lazy" alt="Breakfast" alt="Image">
+                    <!-- <img src="./assets/images/wedding4.jpg" width="285" height="336" loading="lazy" alt="Appetizers" -->
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Wedding</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Our Shoot</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <!-- <img src="{{ url_for('static', filename='images/bday2.avif') }}" width="285" height="336" loading="lazy" alt="Breakfast" alt="Image"> -->
+                    <img src="{{ url_for('static', filename='images/bday2.avif') }}"  width="285" height="336" loading="lazy" alt="Drinks" class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Party & Other Events</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">View Our Shoot</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="{{ url_for('static', filename='images/shape-2.png') }}" width="343" height="345" loading="lazy" alt="shape" alt="Image">
+          <!-- <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"class="shape shape-2 move-anim"> -->
+            
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+
+            <h2 class="headline-1 section-title">Professional, Traditional & Experience</h2>
+
+            <p class="section-text">
+              
+               With over 15+ years of experience in photography and videography, our team of experts is dedicated to capturing life's precious moments with precision, passion, and creativity. From weddings and celebrations to corporate events and portraits, we bring a traditional touch to modern storytelling. Trust us to preserve your memories for generations to come.
+            </p>
+
+            <div class="contact-label">Book Through Call</div>
+
+            <a href="tel:+804001234567" class="body-1 contact-number hover-underline">+91 74157-41574</a>
+
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="{{ url_for('static', filename='images/camera1.jpg') }}" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="{{ url_for('static', filename='images/camera2.jpg') }}" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+           
+
+          </figure>
+
+         
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SPECIAL PHOTOGRAPHY
+      -->
+
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+
+        <div class="special-dish-banner">
+          <img src="{{ url_for('static', filename='images/wedding8.jpg') }}" width="940" height="900" loading="lazy" alt="special dish"
+            class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <img src="{{ url_for('static', filename='images/badge-1.png') }}" width="33" height="41" loading="lazy" alt="badge" class="abs-img">
+
+            <p class="section-subtitle label-2">WEDDING</p>
+
+            <h2 class="headline-1 section-title">INDIAN TRADITIONAL WEDDING </h2>
+
+            <p class="section-text">
+              The  Indian wedding is a vibrant celebration of love and tradition. With intricate rituals and customs, it's a union of two hearts, blessed by family and divine. The air is filled with laughter, music, and the sweet scent of flowers. As the bride and groom exchange vows, their love becomes a flame that burns bright for a lifetime. Together, they embark on a journey of happiness, harmony, and togetherness.
+              <br>:-Book our Photographers to store your all Sweet and Happy Moments....
+            </p>
+
+            
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">View All Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View All Menu</span>
+            </a>
+
+          </div>
+        </div>
+
+        
+        
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #MENU
+      -->
+
+      <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Special Selection</p>
+
+          <h2 class="headline-1 section-title text-center">We go to many events to take photos & videos, such as:-</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="{{ url_for('static', filename='images/wedding1.jpeg') }}" width="100" height="100" loading="lazy" alt="Greek Salad"
+                    class="img-cover">
+                </figure>
+
+                <div>
+                    
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#reservation" class="card-title">Wedding Shoot</a>
+                    </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="{{ url_for('static', filename='images/pre_wedding.jpg') }}" width="100" height="100" loading="lazy" alt="Lasagne"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#reservation" class="card-title">Pre Wedding Shoot</a>
+                    </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="{{ url_for('static', filename='images/bday2.avif') }}" width="100px" height="100" loading="lazy" alt="Butternut Pumpkin"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#reservation" class="card-title">Birthday Party</a>
+                    </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="{{ url_for('static', filename='images/Maternity Shoot.jpg') }}" width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#reservation" class="card-title">Maternity Shoot</a>
+                    </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="{{ url_for('static', filename='images/ring2.jpg') }}" width="100" height="100" loading="lazy" alt="Olivas Rellenas"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#reservation" class="card-title">Ring Ceremony</a>
+                    </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="{{ url_for('static', filename='images/dv1.webp') }}" width="100" height="100" loading="lazy" alt="Opu Fish"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#reservation" class="card-title">Destination Shoot</a>
+                    </h3>
+
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          
+
+        
+
+          <img src="{{ url_for('static', filename='images/shape-5.png') }}" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+          <img src="{{ url_for('static', filename='images/shape-6.png') }}" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('./static/images/cam6.jpeg')" aria-label="testimonials">
+        <div class="container">
+
+          <div class="quote"></div>
+
+          <p class="headline-2 testi-text">
+            "Thank you for considering us to capture your special moments!
+            <br>We're honored you visited our site and look forward to the possibility of working with you."
+
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="{{ url_for('static', filename='images/profile1.avif') }}" width="100" height="100" loading="lazy" alt="Sam Jhonson"
+              class="img">
+
+            <p class="label-2 profile-name">Verma</p>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RESERVATION
+      -->
+
+
+      <section id="reservation">
+        <div class="container">
+            <div class="form reservation-form bg-black-10">
+                <form action="/submit" method="post" class="form-left" id="reservationForm">
+                    <h2 class="headline-1 text-center">Online Shoot Reservation</h2>
+                    <p class="form-text text-center">
+                        Booking request <a href="tel:+917415741574" class="link">+91-74157-41574</a>
+                        or fill out the order form
+                    </p>
+    
+                    <div class="input-wrapper">
+                        <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field" required>
+                        <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field" required>
+                    </div>
+    
+                    <div class="input-wrapper">
+                        <div class="icon-wrapper">
+                            <h3>From</h3>
+                            <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+                            <input type="date" name="reservation-date" class="input-field" required>
+                        </div>
+    
+                        <div class="icon-wrapper">
+                            <h3>To</h3>
+                            <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+                            <input type="date" name="reservation-to-date" class="input-field" required>
+                        </div>
+                    </div>
+    
+                    <div style="margin: 10px;">
+                        <label for="shoot-options" style="color: white; font-size: 16px; display: block; margin-bottom: 5px;">Choose a shoot:</label>
+                        <select id="shoot-options" name="shoot-options"
+                                style="color: white; background-color: #333; border: 1px solid #ccc; padding: 5px; border-radius: 4px; font-size: 16px; width: 100%; display: block;"
+                                required>
+                            <option value="Wedding Shoot" style="color: white; background-color: #555;">Wedding shoot</option>
+                            <option value="Pre Wedding Shoot" style="color: white; background-color: #444;">Pre Wedding shoot</option>
+                            <option value="Birthday Shoot" style="color: white; background-color: #444;">Birthday shoot</option>
+                            <option value="Maternity Shoot" style="color: white; background-color: #444;">Maternity shoot</option>
+                            <option value="Ring Ceremony" style="color: white; background-color: #444;">Ring Ceremony</option>
+                            <option value="Destination Shoot" style="color: white; background-color: #444;">Destination shoot</option>
+                        </select>
+                    </div>
+    
+                    <textarea name="message" placeholder="Message" autocomplete="off" class="input-field" required></textarea>
+    
+                    <script>
+                        // Attach a submit event listener to the form
+                        document.getElementById('reservationForm').addEventListener('submit', function(event) {
+                            // Show a success alert message
+                            alert("Booking successful!");
+                            // Allow the form submission to proceed (redirect to /submit)
+                        });
+                    </script>
+    
+                    <button type="submit" class="btn btn-secondary">
+                        <span class="text text-1">Book Your Event</span>
+                        <span class="text text-2" aria-hidden="true">Book Your Event</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+      <!-- <section id="reservation">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            <form action="new.php" method="post" class="form-left">
+
+              <h2 class="headline-1 text-center">Online Shoot Reservation</h2>
+
+              <p class="form-text text-center">
+                Booking request <a href="tel:+917415741574" class="link">+91-74157-41574</a>
+                or fill out the order form
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
+
+                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
+              </div>
+
+              <div class="input-wrapper">
+
+                
+
+                <div class="icon-wrapper">
+                  <h3>From</h3>
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="reservation-date" class="input-field">
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <h3>To</h3>
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="reservation-date" class="input-field">
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+                
+
+              </div> -->
+
+
+           
+            
+            <!-- <div style="margin: 10px;">
+              <label for="shoot-options" style="color: white; font-size: 16px; display: block; margin-bottom: 5px;">Choose a shoot:</label>
+              <select id="shoot-options" name="shoot-options" 
+                  style="color: white; background-color: #333; border: 1px solid #ccc; padding: 5px; border-radius: 4px; font-size: 16px; width: 100%; display: block;">
+                  <option value="Wedding Shoot" style="color: white; background-color: #555;">Wedding shoot</option>
+                  <option value="Pre Wedding Shoot" style="color: white; background-color: #444;">Pre Wedding shoot</option>
+                  <option value="Birthday Shoot" style="color: white; background-color: #444;">Birthday shoot</option>
+                  <option value="Maternity Shoot" style="color: white; background-color: #444;">Maternity shoot</option>
+                  <option value="Ring Ceremony" style="color: white; background-color: #444;">Ring Ceremony</option>
+                  <option value="Destination Shoot" style="color: white; background-color: #444;">Destination shoot</option>
+              </select>
+          </div>
+          
+          
+              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Book Your Event</span>
+
+                <span class="text text-2" aria-hidden="true">Book Your Event</span>
+              </button>
+
+            </form> -->
+
+
+
+
+            <!-- <div class="form-right text-center" style="background-image: url('./static/images/form-pattern.png')">
+
+              <h2 class="headline-1 text-center">Contact Us</h2>
+
+              <p class="contact-label">Booking Request</p>
+
+              <div class="separator"></div>
+
+              <a href="mailto:book@yourdate.com" class="hover-underline">
+                <div class="icon">
+                  <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span class="span">book@yourdate.com</span>
+             </a>
+
+
+              <a href="tel:+917415741574" class="body-1 contact-number hover-underline">+91-74157-41574</a>
+
+              <div class="separator"></div>
+
+              <div class="separator"></div>
+
+              
+              <p class="contact-label">Location</p>
+
+              <address class="body-4">
+                City Bhilai, <br>
+                Chhattisgarh
+              </address>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section> -->
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features text-center" aria-label="features">
+        <selection id="features"></selection>
+        <div class="container">
+
+          <p class="section-subtitle label-2">Why Choose Us</p>
+
+          <h2 class="headline-1 section-title">Our Strength</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="{{ url_for('static', filename='images/features-icon-4.png') }}" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Get Offers</h3>
+
+                <p class="label-1 card-text">If you book an event on this site at any time, you will always get some offer.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="{{ url_for('static', filename='images/edit.png') }}" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Expert Editing Skills</h3>
+
+                <p class="label-1 card-text">Proficiency in photo and video editing software.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="{{ url_for('static', filename='/images/bokking icon.png') }}" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Easy Contact And Booking</h3>
+
+                <p class="label-1 card-text">Make it simple for visiters to get in touch or book a session.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="{{ url_for('static', filename='images/features-icon-4.png') }}" width="100" height="80" loading="lazy" alt="icon">
+                  
+                </div>
+
+                <h3 class="title-2 card-title">Creative Direction</h3>
+
+                <p class="label-1 card-text">Ability to guide clients and subjects to achive desired poses,expressions and moods.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          
+            <!-- class="shape shape-1">
+
+          
+            class="shape shape-2"> -->
+
+        </div>
+      </section>
+
+
+
+       <!-- 
+        - #EVENT
+      -->
+
+      <section class="section event bg-black-10" aria-label="event">
+        <selection id="event"></selection>
+        <div class="container">
+
+          <p class="section-subtitle label-2 text-center">FEEDBACK</p>
+
+          <h2 class="section-title headline-1 text-center">Customer Review</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="{{ url_for('static', filename='images/cam1.jpg') }}" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-15">15/04/2024</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Excellent Service</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Exceptional service or quality.
+                    <h4>@Monu12</h4>
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="{{ url_for('static', filename='images/cam4.jpeg') }}" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-08">18/06/2024</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Professional</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Polite, Courteous and Skilled staff.
+                    <h4>@Rahul18</h4>
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="{{ url_for('static', filename='images/cam2.jpeg') }}" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-03">17/08/2024</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Creative</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Innovative or artistic <br>approach to photography.
+                   <h4> @Kajal04</h4>
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="mailto:book@yourdate.com" class="btn btn-primary">
+            <span class="text text-1">Give your feedback</span>
+
+            <span class="text text-2" aria-hidden="true">Give your feedback</span>
+          </a>
+
+        </div>
+      </section>
+      
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./static/images/camera7.avif')">
+    <selection id="footer"></selection>
+    <div class="container">
+
+      <div class="footer-top grid-list">
+        
+        <div class="footer-brand has-before has-after">
+
+          <!-- <a href="#" class="logo">
+            <img src="./assets/images/book your date.png" width="160" height="50" loading="lazy" alt="book your date">
+          </a> -->
+
+          <h1>Contact Us</h1>
+          <h2>-------------</h2>
+
+          <!-- <a href="#" class="logo">
+            <img src="./assets/images/logo1.png" width="160" height="50" loading="lazy" alt="foodmunch home">
+          </a> -->
+          
+          <address class="body-4">
+            
+            Studio at Bhilai, cg
+          </address>
+
+          <a href="mailto:book@yourdate.com" class="body-4 contact-link">book@yourdate.com</a>
+
+          <a href="tel:+917415741574" class="body-4 contact-link">Booking Request : +91-74157-41574</a>
+
+          <p class="body-4">
+            Open : 10:00 am - 6:00 pm
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Get News & Offers</p>
+
+          <p class="label-1">
+            Subscribe us & Get <span class="span">25% Off.</span>
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#home" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="#menu" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+
+          <li>
+            <a href="#event" class="label-2 footer-link hover-underline">Feedback</a>
+          </li>
+
+          <li>
+            <a href="#reservation" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#www.facebook.com" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#www.instagram.com" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#www.twitter.com" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="#www.youtube.com" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="#www.googlemap.com" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2024 BOOK YOUR DATE. All Rights Reserved | Crafted by <a href="#"
+            target="_blank" class="link">❤️</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+  <!-- <script src="./assets/js/script.js"></script> -->
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+
+</html>
